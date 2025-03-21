@@ -1,0 +1,151 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<style>
+@font-face {
+    font-family: "Berlin";
+    src: url('berlin.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Tarzan";
+    src: url('tarzan.ttf') format("truetype");
+}
+
+
+body {
+cursor: default;
+background: #eee;
+color: black;
+font-family: 'Berlin',sans;
+margin: 0px;
+}
+div {
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 8px;
+padding-bottom: 8px;
+margin: 0px;
+
+}
+
+div.one {
+text-align: center;
+background: url('images/bg.jpg');
+text-shadow:
+ 1px 1px 0 #000,
+ -1px 1px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000;
+ margin: 0px; 
+padding: 16px;
+color: white;
+font-weight: bold;
+}
+td {
+vertical-align: top;
+}
+table { width: 100%; }
+iframe { border: 0px solid gray; }
+
+a.button {
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 4px;
+padding-bottom: 4px;
+margin-left: 8px;
+margin-right: 8px;
+border: 1px solid white;
+border-radius: 4px;
+margin-top: 8px;
+margin-bottom: 8px;
+text-decoration: none;
+color: white;
+background: #2473c7;
+text-align: center;
+line-height: 200%;
+width: 100%;
+font-weight: bold;
+}
+a.button:hover {
+background: #30b3e3;
+}
+h2 { font-family: 'Tarzan'; }
+</style>
+</head>
+
+<body>
+
+<div class="one">
+<h1 style="font-family: 'Tarzan'">Welcome!</h1>
+
+<p>Welcome to the official home page of the Super Freaks!</p>
+<p>I am SuperFreaksDev, one of two creators and designers of these cartoon lunatics and their games, the other being my best friend Kingnormal.</p>
+</div>
+
+<div style="background: silver;"><h2>Games</h2>
+<table><tr>
+<td><p>The Super Freaks have had several games made since 2006! Information about and links to most of them are here on the website, and itch.io!</p>
+
+<p>Ranging from epic platformers to wacky top-down and shoot'em up action, the Super Freaks franchise is quite varied a lot of fun!</p>
+
+<p style="background: gray; overflow: hidden; text-align: center;"><img src="images/sf1ue1.png" style="max-height: 120px"> <img src="images/arcade.png" style="max-height: 120px">  <img src="images/thedemo.png" style="max-height: 120px"> <img src="images/sf1.png" style="max-height: 120px"> <img src="images/sf2.png" style="max-height: 120px"> <img src="images/sf3.png" style="max-height: 120px"> </p></div>
+
+
+
+<td><iframe width="320" height="160" style=" margin-left: 4%; border-radius: 4px" src="https://www.youtube.com/embed/GEWIyyKmqQI" title="Super Freaks 1 Ultimate Edition + Strato-Scruffy + Super Freaks Classic Pack LAUNCH/SAGE 23 TRAILER" frameborder="12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+</tr></table>
+									
+
+</div>
+
+<div style="background: #169cc4;">
+<h2>Characters</h2>
+<table>
+<tr><td>
+
+		<div class="w3-content w3-section" style="max-width:500px">
+										<img class="mySlides" src="images/Scruffy.png" style="width:70%">
+										<img class="mySlides" src="images/Tikiman.png" style="width:70%">
+										<img class="mySlides" src="images/Gambi.png" style="width:70%">
+										<img class="mySlides" src="images/KingQuincy.png" style="width:70%">
+										<img class="mySlides" src="images/Sticky.png" style="width:70%">
+									  <img class="mySlides" src="images/Kranion.png" style="width:70%">
+									</div>
+									  <script>
+									  var myIndex = 0;
+									  carousel();
+									  
+									  function carousel() {
+										var i;
+										var x = document.getElementsByClassName("mySlides");
+										for (i = 0; i < x.length; i++) {
+										  x[i].style.display = "none";  
+										}
+										myIndex++;
+										if (myIndex > x.length) {myIndex = 1}    
+										x[myIndex-1].style.display = "block";  
+										setTimeout(carousel, 2000); // Change image every 2 seconds
+									  }
+									  </script>
+
+
+</td>
+<td><p>Featuring a wide host of wacky characters, the Super Freaks franchise has many friendly faces and crazy foes!</p>
+
+<p>The Super Freaks: Scruffy, King Quincy, Gambi, and Tikiman go on many perilous adventures featuring wacky powers!</p></td>
+</tr>
+</table>
+</div>
+
+
+<div><h2>News</h2>
+
+<p>Super Freaks has a bunch of developments across the Internet!</p>
+
+
+
+</div>
+</body>
+</html>

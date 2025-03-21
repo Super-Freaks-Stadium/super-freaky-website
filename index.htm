@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Super Freaks Stadium</title>
+<style>
+body {
+background: black;
+color: white;
+cursor: default;
+margin: 0px;
+font-family: tahoma,sans;
+}
+        .marquee {
+            overflow: hidden;
+            position: relative;
+            height: 4px;
+            width: 100%;
+            /* Full width of its parent */
+            white-space: nowrap;
+background: rgba(0,0,0,0.5);
+transition: all 0.25s ease-out;
+        }
+
+.marquee:hover {
+height: 64px;
+transition: all 0.25s ease-out;
+}
+        .marquee p {
+            position: absolute;
+            width: auto;
+            height: 100%;
+            margin: 0;
+            line-height: 64px;
+            text-align: center;
+            /* Start off the right edge */
+            transform: translateX(100%);
+            /* Animate to the left */
+            animation: scroll-left 60s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+</style>
+</head>
+<div style="background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/stadiumbg.png')">
+<img src="images/logo.png" style="height: 118px;">
+<div class="marquee"><p><img src="images/classicbg.png" ></div>
+</div>
+<iframe src="menu.htm" style="border: 0px; width: 100%; margin-left: 0px; padding-left: 0px; border-top: 4px solid #51cbe0; border-bottom: 4px solid #51cbe0; height: 80px;">
+</iframe>
+<br>
+
+<iframe src="home.htm" style="width: 100%; height: 72%; border: 0px;" name="main"></iframe>
+
+<p style=" text-align: center;">Super Freaks franchise by SuperFreaksDev &amp; KingNormal.  Site by Riegelsoft.</p>
+
+</body>
+</html>
